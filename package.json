@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "rm -rf .next/cache && next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "rm -rf .next/cache && next build"
+    "pages:build": "rm -rf .next && next build",
+    "pages:dev": "next dev"
   },
   "dependencies": {
     "framer-motion": "^12.18.1",
