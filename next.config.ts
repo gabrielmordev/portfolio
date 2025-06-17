@@ -9,9 +9,17 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Asegúrate de que esto sea false o elimínalo
-  // devIndicators: false
+  webpack: (config, { dev, isServer }) => {
+    // Deshabilitar la caché de webpack para producción
+    if (!dev) {
+      config.cache = {
+        type: 'memory'
+      };
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
+
 
