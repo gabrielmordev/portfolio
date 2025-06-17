@@ -274,7 +274,7 @@ export default function Home() {
                 <h4 className="text-xl font-semibold text-white mb-4">Programa Talento Joven</h4>
                 <p className="text-gray-300 text-sm text-justify">
                   Mi contratación está sujeta a una ayuda de 4.950 € por parte de la Cámara de Comercio de Córdoba,
-                  por mi participación en su programa de cualificación y empleo 'Talento Joven'.
+                  por mi participación en su programa de cualificación y empleo &apos;Talento Joven&apos;.
                 </p>
               </div>
             </motion.div>
